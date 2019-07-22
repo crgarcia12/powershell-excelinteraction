@@ -26,8 +26,17 @@ namespace ExcelUpdater
         {
             try
             {
+                int initialRow;
+                int copyUntilMaxPlusRows;
+
+                Int32.TryParse(txtInitialRowNr.Text, out initialRow);
+                Int32.TryParse(txtCopyUntil.Text, out copyUntilMaxPlusRows);
+
+                initialRow = initialRow == 0 ? 1 : initialRow; // Default InitialRow = 1
+                copyUntilMaxPlusRows = copyUntilMaxPlusRows < 0 ? -1 : copyUntilMaxPlusRows; // Default copyUntilMaxPlusRows = -1
+
                 ExcelUpdater updater = new ExcelUpdater();
-                updater.UpdateExcel(txtFilePath.Text);
+                updater.UpdateExcel(txtFilePath.Text, initialRow, copyUntilMaxPlusRows);
             }
             catch(Exception ex)
             {

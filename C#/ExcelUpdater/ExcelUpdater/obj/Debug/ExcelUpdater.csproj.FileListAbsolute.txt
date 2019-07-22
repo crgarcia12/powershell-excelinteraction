@@ -9,3 +9,14 @@ C:\Users\crgar\source\repos\ExcelUpdater\ExcelUpdater\obj\Debug\ExcelUpdater.csp
 C:\Users\crgar\source\repos\ExcelUpdater\ExcelUpdater\obj\Debug\ExcelUpdater.csproj.CoreCompileInputs.cache
 C:\Users\crgar\source\repos\ExcelUpdater\ExcelUpdater\obj\Debug\ExcelUpdater.exe
 C:\Users\crgar\source\repos\ExcelUpdater\ExcelUpdater\obj\Debug\ExcelUpdater.pdb
+C:\gitrepos\github\crgarcia12\powershell-excelinteraction\C#\ExcelUpdater\ExcelUpdater\obj\Debug\ExcelUpdater.csprojAssemblyReference.cache
+C:\gitrepos\github\crgarcia12\powershell-excelinteraction\C#\ExcelUpdater\ExcelUpdater\obj\Debug\ExcelUpdater.csproj.ResolveComReference.cache
+C:\gitrepos\github\crgarcia12\powershell-excelinteraction\C#\ExcelUpdater\ExcelUpdater\obj\Debug\ExcelUpdater.Main.resources
+C:\gitrepos\github\crgarcia12\powershell-excelinteraction\C#\ExcelUpdater\ExcelUpdater\obj\Debug\ExcelUpdater.Properties.Resources.resources
+C:\gitrepos\github\crgarcia12\powershell-excelinteraction\C#\ExcelUpdater\ExcelUpdater\obj\Debug\ExcelUpdater.csproj.GenerateResource.cache
+C:\gitrepos\github\crgarcia12\powershell-excelinteraction\C#\ExcelUpdater\ExcelUpdater\obj\Debug\ExcelUpdater.csproj.CoreCompileInputs.cache
+C:\gitrepos\github\crgarcia12\powershell-excelinteraction\C#\ExcelUpdater\ExcelUpdater\obj\Debug\ExcelUpdater.exe
+C:\gitrepos\github\crgarcia12\powershell-excelinteraction\C#\ExcelUpdater\ExcelUpdater\obj\Debug\ExcelUpdater.pdb
+C:\gitrepos\github\crgarcia12\powershell-excelinteraction\C#\ExcelUpdater\ExcelUpdater\bin\Debug\ExcelUpdater.exe.config
+C:\gitrepos\github\crgarcia12\powershell-excelinteraction\C#\ExcelUpdater\ExcelUpdater\bin\Debug\ExcelUpdater.exe
+C:\gitrepos\github\crgarcia12\powershell-excelinteraction\C#\ExcelUpdater\ExcelUpdater\bin\Debug\ExcelUpdater.pdb
