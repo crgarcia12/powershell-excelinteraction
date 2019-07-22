@@ -91,7 +91,7 @@
                 // Next iteration indexes
                 columnLetter++;
                 columnIndex++;
-                nextOutRowStart += dataRowCountToCopy + 1;
+                nextOutRowStart += dataRowCountToCopy;
                 columnName = inputSheet.Cells[initialRow, columnIndex].Text;
             }
         }
