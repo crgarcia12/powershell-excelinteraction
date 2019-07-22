@@ -30,8 +30,7 @@
 
             int initialDataRow = initialRow + 1;
             int dataRowCount = maxRow - initialDataRow + 1;
-
-            char columnLetter = 'B';
+           
             int columnIndex = 2;
             int nextOutRowStart = 1;
             string columnName = inputSheet.Cells[initialRow, columnIndex].Text;
@@ -41,6 +40,22 @@
                 Range copyFrom;
                 Range copyTo;
                 int dataRowCountToCopy = dataRowCount;
+
+                // Calculate the column letter excel style: 1 => A, 2 => B
+                string columnLetter = "";
+                int tempIndex = columnIndex;
+                while(tempIndex > 26)
+                {
+                    tempIndex -= 26;
+                    columnLetter = string.IsNullOrEmpty(columnLetter) ? "A" : ((char)(columnLetter[0] + 1)).ToString();
+                }
+
+                columnLetter += ((char)((columnIndex - 1) % 26 + 65)).ToString(); 
+
+                if(columnIndex % 25 == 0)
+                {
+                    Debugger.Break();
+                }
 
                 // We need to find the max value and copy until maxvalue + copyUntilMaxPlusRows
                 if (copyUntilMaxPlusRows >= 0)
@@ -89,8 +104,8 @@
                 copyTo.Value2 = copyFrom.Value2;
 
                 // Next iteration indexes
-                columnLetter++;
                 columnIndex++;
+                columnLetter = "";               
                 nextOutRowStart += dataRowCountToCopy;
                 columnName = inputSheet.Cells[initialRow, columnIndex].Text;
             }

@@ -26,6 +26,8 @@ namespace ExcelUpdater
         {
             try
             {
+                btnOpenAndTransform.Enabled = false;
+
                 int initialRow;
                 int copyUntilMaxPlusRows;
 
@@ -41,6 +43,7 @@ namespace ExcelUpdater
             catch(Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                btnOpenAndTransform.Enabled = true;
             }
         }
     }
