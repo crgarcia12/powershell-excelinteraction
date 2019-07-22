@@ -3,10 +3,13 @@
     using Microsoft.Office.Interop.Excel;
     using System;
     using System.Collections;
+    using System.Collections.Generic;
     using System.Diagnostics;
 
     class ExcelUpdater
     {
+
+
         private string CalculateColumnLettersFromIndex(int columnIndex)
         {
             // Calculate the column letter excel style: 1 => A, 2 => B
@@ -28,9 +31,7 @@
             float maxValue = -1;
             int maxValueIndex = 1;
             int index = 1;
-            // Copy data column
 
-            maxValueIndex = FindMaxItemIndexInRange(copyFrom);
             foreach (Range cell in copyFrom)
             {
                 float cellValue = float.Parse(cell.Value2.ToString());
@@ -45,6 +46,29 @@
             return maxValueIndex;
         }
 
+        public void Play(string filePath, int initialRowIndex, int copyUntilMaxPlusRows)
+        {
+            Application oXL;
+            _Workbook oWB;
+            _Worksheet inputSheet, outputSheet;
+
+            // Start Excel and get Application object.
+            oXL = new Application();
+            oXL.Visible = true;
+
+            // Get a new workbook.
+            oWB = (_Workbook)(oXL.Workbooks.Open(filePath));
+
+            foreach(_Worksheet sheet2 in oWB.Sheets)
+            {
+                Debugger.Log(1,"asd", sheet2.Name);
+            }
+
+            _Worksheet sheet = oWB.Sheets.Add();
+            sheet.Name = "Carlos";
+        }
+
+
         public void UpdateExcel(string filePath, int initialRowIndex, int copyUntilMaxPlusRows)
         {
             Application oXL;
@@ -57,9 +81,29 @@
 
             // Get a new workbook.
             oWB = (_Workbook)(oXL.Workbooks.Open(filePath));
-            inputSheet = (_Worksheet)oWB.Sheets.Item["input"];
-            outputSheet = (_Worksheet)oWB.Sheets.Item["output"];
 
+
+            List<string> inputSheets = new List<string>();
+            foreach (_Worksheet sheet in oWB.Sheets)
+            {
+                inputSheets.Add(sheet.Name);
+            }
+
+            foreach(string inputSheetName in inputSheets)
+            {
+                // Create output
+                _Worksheet sheet = oWB.Sheets.Add();
+                sheet.Name = inputSheetName + "-out";
+
+                inputSheet = (_Worksheet)oWB.Sheets.Item[inputSheetName];
+                outputSheet = (_Worksheet)oWB.Sheets.Item[inputSheetName + "-out"];
+
+                UpdateExcel(initialRowIndex, copyUntilMaxPlusRows, inputSheet, outputSheet);
+            }
+        }
+
+        public void UpdateExcel(int initialRowIndex, int copyUntilMaxPlusRows, _Worksheet inputSheet, _Worksheet outputSheet)
+        {
             // maxRowIndex = index of the first blank cell in the first column
             int maxRowIndex = initialRowIndex;
             while(!string.IsNullOrWhiteSpace(inputSheet.Cells[maxRowIndex+1, 1].Text))
