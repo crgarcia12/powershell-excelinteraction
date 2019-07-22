@@ -1,0 +1,11 @@
+C:\Users\crgar\source\repos\ExcelUpdater\ExcelUpdater\bin\Debug\ExcelUpdater.exe.config
+C:\Users\crgar\source\repos\ExcelUpdater\ExcelUpdater\bin\Debug\ExcelUpdater.exe
+C:\Users\crgar\source\repos\ExcelUpdater\ExcelUpdater\bin\Debug\ExcelUpdater.pdb
+C:\Users\crgar\source\repos\ExcelUpdater\ExcelUpdater\obj\Debug\ExcelUpdater.csprojAssemblyReference.cache
+C:\Users\crgar\source\repos\ExcelUpdater\ExcelUpdater\obj\Debug\ExcelUpdater.csproj.ResolveComReference.cache
+C:\Users\crgar\source\repos\ExcelUpdater\ExcelUpdater\obj\Debug\ExcelUpdater.Main.resources
+C:\Users\crgar\source\repos\ExcelUpdater\ExcelUpdater\obj\Debug\ExcelUpdater.Properties.Resources.resources
+C:\Users\crgar\source\repos\ExcelUpdater\ExcelUpdater\obj\Debug\ExcelUpdater.csproj.GenerateResource.cache
+C:\Users\crgar\source\repos\ExcelUpdater\ExcelUpdater\obj\Debug\ExcelUpdater.csproj.CoreCompileInputs.cache
+C:\Users\crgar\source\repos\ExcelUpdater\ExcelUpdater\obj\Debug\ExcelUpdater.exe
+C:\Users\crgar\source\repos\ExcelUpdater\ExcelUpdater\obj\Debug\ExcelUpdater.pdb

@@ -1,1 +1,2 @@
 # Init
+Install-Module ImportExcel
