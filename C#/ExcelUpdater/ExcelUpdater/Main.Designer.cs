@@ -35,7 +35,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtInitialRowNr = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnOpenAndTransform
@@ -96,22 +95,11 @@
             this.txtInitialRowNr.Size = new System.Drawing.Size(115, 26);
             this.txtInitialRowNr.TabIndex = 5;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(450, 87);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(245, 40);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Open && Transform";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(988, 144);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(988, 186);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtInitialRowNr);
             this.Controls.Add(this.label2);
@@ -136,6 +124,5 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtInitialRowNr;
-        private System.Windows.Forms.Button button1;
     }
 }
