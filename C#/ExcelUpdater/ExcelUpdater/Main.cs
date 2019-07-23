@@ -38,7 +38,7 @@ namespace ExcelUpdater
                 copyUntilMaxPlusRows = copyUntilMaxPlusRows < 0 ? -1 : copyUntilMaxPlusRows; // Default copyUntilMaxPlusRows = -1
 
                 ExcelUpdater updater = new ExcelUpdater();
-                updater.UpdateExcel(txtFilePath.Text, initialRow, copyUntilMaxPlusRows);
+                updater.ProcessExcelFile(txtFilePath.Text, initialRow, copyUntilMaxPlusRows);
             }
             catch(Exception ex)
             {
